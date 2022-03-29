@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
+</head>
+<body>
+<section class="content3">
+    <ul>
+        <li th:each = "email : ${allEmails}">
+            <span th:text = "${email}"></span></li>
+        </li>
+        <br><br>
+    </ul>
+    <button onclick="location.href = '/'">Return to front page</button>
+    </section>
+</body>
+</html>
